@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Quicksand');
+
+html, body {
+  height: 100%;
+  }
+
+@mixin flexStyle {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  }
+
+body {
+  @include flexStyle;
+  background-color: lightgreen;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  }
+
+#quote-box {
+  @include flexStyle;
+  h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    width: 100%;
+    }
+  #text {
+    background-color: white;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 1.5em;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    }
+  #author {
+    font-size: 2em;
+    width: 100%;
+    }
+  #buttons {
+    @include flexStyle;
+    margin-top: 5%;
+    button {
+      font-size: 2em;
+      margin: 0 20px;
+      padding: 20px;
+      a {
+        text-decoration: none;
+        }
+      }
+    }
+  }
